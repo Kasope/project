@@ -1,0 +1,79 @@
+    <html>
+   <title>table exercise</title>
+  <body>
+
+  <table height="400" bgcolor="ffffd0" width="570px" align="center">
+
+                <tr>
+		<td bgcolor="#05dd00" align="left">copy<img src="copy.png" align="left"></td>
+	      <td colspan="2" bgcolor="#090005" align="right"><img src="2copy.png"></td>
+	       </tr>
+		
+	 <tr>
+          <td align="center"><img src="up1.png" align="right">copies</td>
+           <td rowspan="8" align="centre"><img src="centr2.png"></td>
+         <td bgcolor="green">Send as well as Print</td>
+           </tr>
+
+      <tr>
+       <td bgcolor="#05dd00" align="left"><img src="1.png" align="left">Color Mode<sub>fullcolor</sub></td>
+         <td bgcolor="green">Quick File<br >Store Data Temporarily</td>
+     </tr>
+
+	<tr>
+       <td bgcolor="#cfffee" align="left"><img src="2.png" align="left">Original<sub>A4</sub></td>
+      <td bgcolor="green">File<br >Store Data in Folder</td>
+	</tr>
+	
+	<tr>
+       	  <td bgcolor="#05dd00" align="left"><img src="3.png" align="left">Exposure<sub>Auto</sub></td>
+      	   <td bgcolor="green">Scan Original Again<br >Without Change Settings</td>
+	</tr>
+
+	   <tr>
+	     <td bgcolor="#05dd00" align="left"><img src="4.png" align="left">Copy Ratio<sub>100%</sub></td>
+	     <td bgcolor="green"></td>
+	   </tr>
+
+	<tr>
+         <td bgcolor="#05dd00" align="left"><img src="5.png" align="left">Paper Select<sub>Auto</sub></td>
+	<td bgcolor="green"></td>
+	</tr>
+	
+      <tr>
+        <td bgcolor="#05dd00" align="left"><img src="6.png" align="left">2-Sided Copy<sub>1-side to 1-side</sub></td>
+          <td rowspan="3" align="centre"><img src="down3.png"></td>
+      </tr>
+
+	 <tr>
+           <td bgcolor="#05dd00" align="left"><img src="7.png" align="left">Sort/Group<sub>Auto</sub></td>
+	 </tr>
+
+    <tr> 
+      <td colspan="3"><img src="neww.png"></td>
+    </tr>
+  </table>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

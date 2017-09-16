@@ -1,0 +1,182 @@
+<html>
+ </head>
+     <title>dignityfinancial</title>
+	
+      <style type="text/css" rel="stylesheet">
+	
+	body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	}
+	
+	#maincontainer{
+	background-color:#ffffff;
+	height:480px;
+	width:1000px;
+	}
+	
+	img{
+	float:left;
+	}
+
+	#header p{
+	font-size:30px;
+	float:left;
+	margin-left:2px;
+	color:#191970;
+	font-family:showcard gothic;
+	}
+	
+	span{
+	font-size:25px;
+	color:#708090;
+	}
+
+	#rowone{
+	clear:left;
+	background-color:#191970;
+	height:40px;
+	width:1000px;
+	margin:0 auto;	
+	}
+	
+	#rowone a{
+	float:left;
+	color:white;
+	text-decoration:none;
+	font-family:tahoma;
+	font-size:17px;
+	text-indent:0.5cm;
+	}
+
+	.in{
+	float:left;
+	background-color:#708090;
+	height:70%;
+	width:900px;
+	margin-left:10px;
+	}
+	
+	input{
+	float:right;
+	}
+
+	#rowtwo{
+	height:154px;
+	border-bottom: solid 7px #a9a9a9;
+	background-color:white;
+	margin-left:1px;
+	margin-right:1px;
+	padding:0; 
+	}
+
+	.two{
+	float:left;
+	width:325px;
+	background-color:white;
+	height:154px;
+	border-left:1px solid white;
+        border-right:1px solid white;
+	}
+
+	.two strong{
+	color:#708090;
+	font-family:arial;
+	margin:30px;
+	}
+	
+		
+	#rowthird{
+	width:1000px;
+	height:145px;
+	background-color:white;
+	margin:0 auto;
+	}
+
+	.thre{
+	float:left;
+	width:325px;
+	height:145px;
+	background-color:white;
+	border-top:3px solid white;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	}
+
+	#footer{
+	float:left;
+	width:1000px;
+	height:33px;
+	background-color:white;
+	text-align:center;
+	padding: 8px,0;
+	}
+
+	
+
+      </style>	
+
+   <body>
+	<div id="maincontainer">
+	  <div id="header"><img src="logo.png">
+	   <p>FMK <span>Apparel School</span></p> 
+	  </div>
+	  <div id="rowone"><a href="Home.html">Home</a>
+	
+	    <div class="in">
+	      <a href="Aboutus.html">About Us</a>  
+	      <a href="Collections">Collections</a>  
+		
+	<input type="text" name="text" />
+	<input type="button" name="search" value="SEARCH" />
+	    </div>
+	
+	   </div>
+	  
+	  <div id="rowtwo">
+	  	<div class="two"><p><strong>Securing Your Dignity Every Time</strong>
+		<strong>With Our Styles is what we do.</strong>
+		<strong>We apply design and art principles</strong>
+		<strong>to clothes in ways that will make</strong> 
+		<strong>the clothing functional and</strong> 
+		<strong>beautiful.</strong></p>
+		</div>
+		<div class="two"><p><img src="di.png" width="333px" height="140px"></p></div>
+		<div class="two"><p><img src="elll.png" width="300px" height="140px"></p></div>
+	  </div>
+	  <div id="rowthird">
+
+		<div class="thre">
+		<a href="signup.html"><input type="button" name="signup" value="Sign Up To Register" /></a><br />
+		<p>Username:<input type="text" name="username" /></p>
+		<p>Password:<input type="password" name="password" /></p>
+		<p><input type="button" name="submit" value="submit"></p>
+		</div>
+
+		<div class="thre">
+		<p>We have various classes ranging from:</p>
+		<ul>
+		<li>Beginner classes</li>
+		<li>Expertize classes</li>
+		<li>Professional classes</li>
+		</ul>
+		</div>
+
+		<div class="thre">
+		<p>We did not only teach people,<br />
+		   We sell quality materials of various kind<br />
+		   ranging from: 
+		  Chiffon,Wool,Cotton,Ramie,Fur,Silk,<br />
+		  Fibre,Shop,satin,Crepe,Velvet,Voile<br />
+		  Tweed,Denim,Flannel,Fleece,Interlock.  
+		</p>
+		</div>
+	  </div>
+	  <div id="footer"><p>copyright&copy 2017 FMK Apparel School.All rights Reserved.</p>
+	  </div>
+	<div>
+   </body>
+ </head>
+</html>

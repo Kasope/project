@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>calculator</title>
+	
+
+
+<style type="text/css" rel="stylesheet">
+
+	body{
+	margin:0;
+	background:#e6e6fa;
+	padding:0;
+	width:100%;
+	height:100%;
+	}
+
+	#maincont{
+	width:370px;
+	height:400px;
+	background-color:778899;
+	border:1px solid black;
+	margin-right:50px;
+	margin-left:200px;
+	margin-top:30px;
+	}
+
+	.inn{
+	width:330px;
+	height:350px;
+	background-color:87cefa;
+	border-radius:15px;
+	border:1px  solid black;
+	margin-right:5px;
+	margin-left:20px;
+	margin-bottom:5px;
+	margin-top:20px;
+	}
+
+	.up{
+	width:330px;
+	height:25px;
+	border-radius:5px;
+	background-color:#fff5ee;
+	}
+
+	.screen{
+	position:relative;
+	height:30px;
+	font-size:21px;
+	margin-top:9px;
+	text-align:right;
+	}
+	
+	.screen input{
+	position:relative;
+	height:35px;
+	background-color:#bccd95;
+	font-size:18px;
+	text-align:right;
+	}
+	
+	.keys{
+	margin-top:15px;
+	position:relative;
+	}
+
+	.button{
+	width:40px;
+	height:30px;
+	border-radius:8px;
+	margin-left:17px;
+	margin-bottom:15px;
+	border-top:2px solid transparent;
+	}
+	
+	.button.gray{
+	color:white;
+	background-color:gray;
+	border-top:1px solid;
+	border-bottom:gray 1px solid;
+	}
+	
+	.button.navy{
+	color:white;
+	background-color:navy;
+	border-top:1px solid;
+	border-bottom:navy 1px solid;
+	}
+
+	.button.white{
+	color:black;
+	background-color:white;
+	border-top:1px solid;
+	border-bottom:white 1px solid;
+	}
+
+	.button.gold{
+	color:black;
+	background-color:gold;
+	border-top:1px solid;
+	border-bottom:gold 1px solid;
+	}
+	
+</style>
+
+<script type="text/javascript">
+
+function displaynum(n1)
+{
+document.getElementById('txt').value=document.getElementById('txt').value+n1;
+}
+
+function squareroot() 
+{
+var me= document.getElementById('txt').value;
+var you= Math.sqrt(me);
+document.getElementById('txt').value= you;
+}
+
+function square()
+{
+var we=document.getElementById('txt').value;
+var let=document.getElementById('txt').value;
+var not=we*let;
+document.getElementById('txt').value=not;
+}
+
+function cube()
+{
+var ret=document.getElementById('txt').value;
+var rot=document.getElementById('txt').value;
+var rep=document.getElementById('txt').value;
+var answ=ret*rot*rep;
+document.getElementById('txt').value=answ;
+}
+
+
+
+</script>
+</head>
+
+<body>
+
+
+	<div id="maincont">
+
+	  <div class="inn">
+		<div class="up">
+		<span><input type="button" name="button" value="View" />
+		      <input type="button" name="button" value="Edit" />
+		      <input type="button" name="button" value="Help" /></span>
+		</div>
+
+		<div class="screen">
+		<input type="text" id="txt" readonly size="36" />
+		</div>
+		<form name=form1>
+		<div class="keys">
+		<input type="button" name="KASIO" class="button gray" value="MC"  onclick="displaynum(KASIO.value);">
+		<input type="button" name="btnMR" class="button gray" value="MR" >
+		<input type="button" name="btnM+" class="button gray" value="M+" >
+		<input type="button" name="btnarrow" class="button gray" value="&larr;" onclick=""/>
+		<input type="button" name="btnM-" class="button white" value="M-"><br />
+		<input type="button" name="btnCE" class="button navy" value="CE">
+		<input type="reset" name="btnC" class="button navy" value="C">
+
+	<input type="button" name="percbtn" class="button navy" value="%" onclick="displaynum(percbtn.value);"/>
+	<input type="button" name="sqrtbtn"   class="button navy" value="&radic;"  onclick="squareroot();"/>
+	<input type="button" name="divbtn"  class="button white" value="/"  onclick="displaynum(divbtn.value);"/><br />
+
+		<input type="button" name="btn7"  class="button navy" value="7" onclick="displaynum(btn7.value);" />
+		<input type="button" name="btn8" class="button navy" value="8"  onclick="displaynum(btn8.value);"/>
+		<input type="button" name="btn9" class="button navy" value="9"  onclick="displaynum(btn9.value);"/>
+
+		<input type="button" name="btnM+" class="button navy" value="&int;">
+	<input type="button" name="btnmul" class="button white" value="*" onclick="displaynum(btnmul.value);"/><br />
+
+		<input type="button" name="btn4" class="button navy" value="4"   onclick="displaynum(btn4.value);"/>
+		<input type="button" name="btn5" class="button navy" value="5"   onclick="displaynum(btn5.value);"/>
+		<input type="button" name="btn6" class="button navy" value="6"   onclick="displaynum(btn6.value);"/>
+
+		<input type="button" name="btnM+" class="button navy" value="&pi;">
+		<input type="button" name="subbtn" class="button white"value="-" onclick="displaynum(subbtn.value);"><br />
+
+		<input type="button" name="btn1" class="button navy" value="1"  onclick="displaynum(btn1.value);"/>
+		<input type="button" name="btn2" class="button navy" value="2"  onclick="displaynum(btn2.value);"/>
+		<input type="button" name="btn3" class="button navy" value="3"  onclick="displaynum(btn3.value);"/>
+
+		<input type="button" name="btnM+" class="button navy" value="x&sup2;" onclick="square();" />
+	<input type="button" name="addbtn" class="button white" value="+" onclick="displaynum(addbtn.value);"/>
+
+		<input type="button" name="btn0" class="button navy" value="0"  onclick="displaynum(btn0.value);"/>
+	<input type="button" name="dotbtn" class="button navy" value="." onclick="displaynum(dotbtn.value);"/>
+
+		<input type="button" name="btnMS" class="button navy" value="MS" />	
+		<input type="button" name="btnM+" class="button navy" value="x&sup3;" onclick="cube();" />
+	<input type="button" name="equalbutn" class="button gold"value="=" onclick="txt.value=eval(txt.value)">
+		</form>
+		</div>
+	  </div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+<html>
+<head>
+<title>Employee</title>
+<style type="text/css" rel="stylesheet">
+
+
+	body
+	{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	}
+	
+	#maincont
+	{
+	width:980px;
+	height:400px;
+	background-color:#ffffff;
+	margin-left:10px;
+	}
+	
+	#header
+	{
+	width:980px;
+	height:40px;
+	background-color:#d0d0d0;
+	}
+
+	#content
+	{
+	clear:left;
+	width:980px;
+	height:260px;
+	background-color:#f0f0f0;
+	background:url(back.png)  no-repeat fixed;
+	}
+	
+	
+	#footer
+	{
+	float:left;
+	width:980px;
+	height:45px;
+	background-color:#d0d0d0;
+	text-align:center;
+	}
+
+	#header strong
+	{
+	font-family:Tahoma;
+	color:blue;
+	font-size:20px;
+	
+	}
+
+	#header p
+	{
+	margin-left:40px;
+	text-align:center;
+	}
+
+	#adminlogin sup
+	{
+	color:blue;
+	font-size:20px;
+	}
+
+	#home
+	{
+	float:left;
+	width:980px;
+	height:20px;
+	background-color:#e0e0e0;
+	}
+
+	#home a
+	{
+	text-decoration:none;
+	color:blue;	
+	}
+	
+	#home b
+	{
+	margin-left:150px;
+	font-family:tahoma;
+	}
+	
+	.divide
+	{
+	float:left;
+	width:485px;
+	height:380px;
+	background-color:#1e90ff;
+	border:2px solid white;
+	}
+	
+    </style>
+
+<script type="text/javascript">
+
+function validateEmploy(field)
+{
+var a = document.myForm.myemploid.value;
+if(a == "")
+{
+window.alert("Please enter your Employee ID in this format..Emp00001");
+a.focus();
+return focus;
+}
+if((a.length < 1 ) || (a. length > 8))
+{
+alert("Employee ID must be 1 to 8 characters");
+document.myForm.myemploid.select();
+return false;
+}
+}
+
+function checkButton(field)
+{
+var c = document.myForm.myRadio;
+for (var i=0; i<c.length; i++)
+{
+if (c[i].checked)
+break;
+}
+if (i==c.length)
+return alert("No radio buttion is checked");
+alert("Radio Button " +(i+1) + " is checked. ");
+}
+
+
+
+function checkName(field)
+{
+var a = document.myForm.myfirst.value;
+if(a =="")
+{
+alert("Please input your First name");
+a.focus();
+return false;
+}
+}
+
+function validateName(field)
+{
+if(field.value =="")
+{
+alert("Kindly input your Last Name");
+field.focus();
+return false;
+}
+}
+
+function validateMiddle(field)
+{
+if(field.value == "")
+{
+alert("Please input your middle name here");
+field.focus();
+return false;
+}
+}
+
+function validateDate(field)
+{
+var c = document.myForm.mydob.value;
+if(c == "")
+{
+alert("kindly input your Date of Birth dd/mm/yyyy");
+field.focus();
+return false;
+}
+}
+
+function checkAddrs(field)
+{
+if(field.value =="")
+{
+alert("Field must not be left blank : Fill in your address");
+field.focus();
+return false;
+}
+}
+
+
+function validateTown(field)
+{
+if(field.value == "")
+{
+alert("Field must not be left blank");
+field.focus();
+return false;
+}
+}
+
+function validateDesig(field)
+{
+if(field.value == "")
+{
+window.alert("Field cannot be left empty");
+field.focus();
+return false;
+}
+}
+
+function checkJoin(field)
+{
+if(field.value == "")
+{
+alert("Field cannot be left empty");
+field.focus();
+return false;
+}
+}
+
+function checkRetire(field)
+{
+var a = document.myForm.myretire.value;
+if(a == "")
+{
+alert("You must provide a valid info");
+a.focus();
+return false;
+}
+}
+
+function validateContact(field)
+{
+var a = document.myForm.mymobile.value;
+if(a == "")
+{
+alert("Please enter your Mobile No 1:");
+a.focus();
+return false;
+}
+if((a.length < 1) || (a.length > 11))
+{
+alert("Your Mobile No must be from 1 to 11 integers");
+a.select();
+return false;
+}
+if(isNaN(a))
+{
+alert("Enter valid Mobile Number(like : 08036789032)");
+return false;
+}
+}
+
+function checkMobile(field)
+{
+if(field.value == "")
+{
+alert("kindly enter your Mobile No 2:");
+field.focus();
+return false;
+}
+if((field.length < 1) ||(field.length > 11))
+{
+alert("Phone number is incomplete:It must not be more than 11 digits: 09033345678");
+field.select();
+return false;
+}
+}
+
+function checkEmail(field)
+{
+var b = document.myForm.mymail.value;
+if(b == "")
+{
+alert("Please input your E-mail address");
+b.focus();
+return false;
+}
+}
+
+function checkNk(field)
+{
+if(field.value == "")
+{
+alert("Nmae of Next of Kin Field is empty");
+field.focus();
+return false;
+}
+}
+
+function validateReligion(field)
+{
+if(field.value == "")
+{
+alert("Kindly fill in your religion");
+field.focus;
+return false;
+}
+}
+
+function checkPob(field)
+{
+if(field.value == "")
+{
+alert("Fill in your Date of Birth");
+field.focus();
+return false;
+}
+}
+
+function validateDept(field)
+{
+if(field.value == "")
+{
+alert("Fill in your Department");
+field.focus();
+return false;
+}
+}
+
+function validateBlood(field)
+{
+if(field.value == "")
+{
+alert("Fill in your BloodType");
+field.focus();
+return false;
+}
+}
+
+
+</script>
+
+
+
+<body>
+<div id="maincont">
+	       <div id="header">
+		<p><strong>EMPLOYEE PAYROLL MANAGEMENT</strong><br /></p>
+		<div id="home">
+		<a href="indexpayroll.html">Home</a>
+		<a href="employeepayroll.html">Employee</a>
+		<a href="#">Payroll</a> 
+		<a href="#">Leave</a> 
+		<a href="#">Report</a> 
+		<a href="#">Help</a><b>General Details</b>
+		
+		</div>
+	       </div>
+	        <div id="content">
+
+		<div class="divide">
+		<table>
+
+		<form name="myForm" onSubmit="return validateEmploy()" onSubmit="return checkButton()" 						onSubmit="return checkName()" onSubmit="return validateName()" onSubmit="return validateDate()"
+		onSubmit="return checkAddrs()" onSubmit="return validateTown()" onSubmit="return validateDesign()"
+		onSubmit="return checkJoin()" onSubmit="return checkRetire()" onSubmit="return validate Contact()"
+		onSubmit="return checkMobile()" onSubmit="return checkEmail()" onSubmit="return checkNk()"
+		onSubmit="return validateReligion()">
+		<tr>
+		<td>Employee ID:</td>
+		<td><input type="text" name="myemploid" size="45" onBlur="validateEmploy(this);"/></td>
+		</tr>
+		
+		<tr>
+
+		<div>
+		<td>Title:</td>
+		<td> Mr.<input type="radio" name="myRadio" value="1"  onClick="checkButton(this);"/>
+		   Mrs.<input type="radio" name="myRadio" value="2" onClick="checkButton(this);" />
+		   Miss.<input type="radio" name="myRadio" value="3" onClick="checkButton(this);" />
+		   Ms.<input type= "radio" name="myRadio" value="4" onClick="checkButton(this);"/>
+		</td></tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>First Name:</td>
+		<td><input type="text" name="myfirst"  id="myfirst" size="45" onBlur="checkName(this)"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Last Name:</td>
+		<td><input type="text" name="mylast" id="mylast" size="45" onBlur="validateName(this);" /></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Middle Name:</td>
+		<td><input type="text" name="mymiddle" size="45" onBlur="validateMiddle(this);" /></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Date of Birth:</td>
+		<td><input type="text" name="mydob" placeholder="dd/mm/yyyy" onBlur="validateDate(this);" /></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Address:</td>
+		<td><input type="text" name="myaddress"  onBlur="checkAddrs(this);" size="45"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Gender:</td>
+		<td>
+		<select>
+			<option  value=""></option><br />
+			<option  value="Male">Male</option>
+			<option  value="Female">Female</option></select></td>
+		</tr>
+		</div>
+		
+		
+		<div>
+		<tr>
+		<td>Town/City:</td>
+		<td><input type="text" name="mytown"  onBlur="validateTown(this);"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>State:</td>
+		<td>
+		<select name="type">
+		<option value="Select any">Select any</option/>  <br />
+			<option value="Abia">Abia</option>
+			<option value="Osun">Osun</option>
+			<option value="Lagos">Lagos</option>
+			<option value="Bauchi">Bauchi</option>
+			<option value="Kaduna">Kaduna</option>
+			<option value="Oyo">Oyo</option>
+			<option value="Plateu">Plateu</option>
+			<option value="Rivers">Rivers</option>
+			<option value="Ogun">Ogun</option>
+		</select></td>
+		</tr>
+		</div>
+		
+		<div>
+		<tr>
+		<td>Joining Date:</td>
+		<td><input type="text" name="myjoin" placeholder="dd/mm/yyyy" onBlur="checkJoin(this);"></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Retirement Date:</td>
+		<td><input type="text" name="myretire" placeholder="dd//mm/yyyy" onBlur="checkRetire(this);"></td>
+		</tr>
+		</div>
+	
+		
+		</table>
+		</div>
+
+		<div class="divide">
+		<table>
+
+		<div>
+		<tr>
+		<td>Designation:</td>
+		<td><input type="text" name="mydesig" size="45" onBlur="validateDesig(this);"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Mobil No 1:</td>
+		<td><input type="text" name="mymobile" size="45" onBlur="validateContact(this);"/></td>
+		</tr>
+		</div>	
+		
+
+		<div>
+		<tr>
+		<td>Mobil No 2:</td>
+		<td><input type="text" name="mynumber" size="45" onBlur="checkMobile(this);"/></td>
+		</tr>
+		</div>
+	
+
+		<div>
+		<tr>
+		<td>E- mail:</td>
+		<td><input type="text" name="mymail" size="45" onBlur="checkEmail(this);"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Name of Next of Kin:</td>
+		<td><input type="text" name="mykin" size="45" onBlur="checkNk(this);"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Religion:</td>
+		<td><input type="text" name="myreligion" size="45" onBlur="validateReligion(this);"/></td>
+		</tr>
+		</div>
+		
+		<div>
+		<tr>
+		<td>Place of Birth:</td>
+		<td><input type="text" name="myPlace" size="45" onBlur="checkPob(this);"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Department:</td>
+		<td><input type="text" name="mydepart" size="45" onBlur="validateDept(this);"/></td>
+		</tr>
+		</div>
+
+		<div>
+		<tr>
+		<td>Blood Type:</td>
+		<td><input type="text" name="myblood"  size="45" onBlur="validateBlood(this);"/></td>
+		</tr>
+		</div>
+		</table>
+		</div>
+
+		</div>
+		<div id="footer">
+		<p><input type="submit" value="Submit" name="mysub" ></p>
+		</div>
+	   </div>
+
+
+
+
+</body>
+
+</head>
+</html>
